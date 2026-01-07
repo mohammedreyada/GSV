@@ -1,0 +1,544 @@
+/* =====================
+   Execution Philosophy
+===================== */
+.execution-section {
+  padding: 140px 0;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f7f9fc 100%
+  );
+}
+
+.execution-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Side */
+.execution-statement .tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #0a7d4f;
+}
+
+.execution-statement h2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #0f172a;
+}
+
+.execution-statement h2 span {
+  color: #0a7d4f;
+}
+
+/* Right Side */
+.execution-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #1e293b;
+}
+
+.execution-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #475569;
+  max-width: 480px;
+}
+
+/* Accent Line */
+.execution-line {
+  margin-top: 40px;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    #0a7d4f,
+    #2563eb
+  );
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.execution-line::after {
+  content: "";
+  position: absolute;
+  left: -40%;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+  animation: slide 2.5s infinite;
+}
+
+@keyframes slide {
+  0% { left: -40%; }
+  100% { left: 120%; }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .execution-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .execution-statement h2 {
+    font-size: 42px;
+  }
+}
+/* =====================
+   Execution Model
+===================== */
+.execution-model {
+  padding: 140px 0;
+  background: #ffffff;
+}
+
+.model-header .tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #0a7d4f;
+}
+
+.model-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Line */
+.timeline-line {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #0a7d4f,
+    #2563eb
+  );
+  z-index: 0;
+}
+
+/* Steps */
+.timeline-step {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding: 0 10px;
+}
+
+.step-circle {
+  width: 72px;
+  height: 72px;
+  background: #ffffff;
+  border: 2px solid #0a7d4f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0a7d4f;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.timeline-step:hover .step-circle {
+  background: #0a7d4f;
+  color: #ffffff;
+}
+
+.timeline-step h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.timeline-step p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .step-circle {
+    margin-bottom: 16px;
+  }
+}
+/* =====================
+   Delivery Principles
+===================== */
+.delivery-section {
+  padding: 140px 0;
+  background: #f8fafc;
+}
+
+.delivery-header {
+  max-width: 600px;
+  margin-bottom: 80px;
+}
+
+.delivery-header .tag {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #0a7d4f;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.delivery-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Grid */
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+
+/* Item */
+.delivery-item {
+  position: relative;
+  padding-left: 64px;
+}
+
+.delivery-item .number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0a7d4f;
+  opacity: 0.25;
+}
+
+.delivery-item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.delivery-item p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+  max-width: 420px;
+}
+
+/* Subtle interaction */
+.delivery-item:hover .number {
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .delivery-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .delivery-header h2 {
+    font-size: 36px;
+  }
+}
+/* =====================
+   Why Sidra
+===================== */
+.why-sidra {
+  padding: 160px 0;
+  background: #ffffff;
+}
+
+/* Statement */
+.why-statement {
+  max-width: 800px;
+  margin-bottom: 100px;
+}
+
+.why-statement .tag {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #0a7d4f;
+}
+
+.why-statement h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.why-statement h2 span {
+  color: #0a7d4f;
+}
+
+/* Grid */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px 60px;
+}
+
+/* Item */
+.why-item {
+  max-width: 420px;
+}
+
+.why-item h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #1e293b;
+  position: relative;
+  padding-left: 24px;
+}
+
+.why-item h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: #0a7d4f;
+  border-radius: 50%;
+}
+
+.why-item p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .why-statement h2 {
+    font-size: 40px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+}
+/* ==========================
+ /* ==========================
+   Global Partnerships Section
+========================== */
+.global-section {
+  padding: 160px 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8fafc 100%
+  );
+}
+
+/* ==========================
+   Header
+========================== */
+.global-header {
+  max-width: 900px;
+  margin-bottom: 100px;
+}
+
+.global-header .tag {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #0a7d4f;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.global-header h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.global-header h2 span {
+  color: #0a7d4f;
+}
+
+/* ==========================
+   Grid Layout
+========================== */
+.global-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  margin-bottom: 120px;
+}
+
+/* ==========================
+   Insights
+========================== */
+.global-insights h4,
+.global-partnerships h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1e293b;
+}
+
+.global-insights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.global-insights li {
+  font-size: 16px;
+  padding-left: 26px;
+  margin-bottom: 16px;
+  position: relative;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.global-insights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 8px;
+  background: #0a7d4f;
+  border-radius: 50%;
+}
+
+/* ==========================
+   Partnerships
+========================== */
+.global-partnerships p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 24px;
+}
+
+.global-partnerships .emphasis {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* ==========================
+   Vision 2030 Box (Fixed Identity)
+========================== */
+.vision-box {
+  padding: 60px;
+  background: #f0fdf4;
+  border-left: 6px solid #0a7d4f;
+  border-radius: 10px;
+  margin-bottom: 90px;
+}
+
+.vision-box h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0a7d4f;
+  margin-bottom: 16px;
+}
+
+.vision-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #334155;
+  max-width: 720px;
+}
+
+/* ==========================
+   CTA
+========================== */
+.global-cta {
+  text-align: center;
+}
+
+.global-cta a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0a7d4f;
+  text-decoration: none;
+  position: relative;
+}
+
+.global-cta a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #0a7d4f;
+  transition: width 0.3s ease;
+  margin: 8px auto 0;
+}
+
+.global-cta a:hover::after {
+  width: 100%;
+}
+
+/* ==========================
+   Responsive
+========================== */
+@media (max-width: 991px) {
+  .global-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .global-header h2 {
+    font-size: 38px;
+  }
+
+  .vision-box {
+    padding: 40px;
+  }
+}

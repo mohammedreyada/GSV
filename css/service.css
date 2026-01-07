@@ -1,0 +1,363 @@
+/* service */
+/* =========================
+ /* =========================
+   Equal Cards Section
+========================= */
+.policy-cards {
+  background: #f8fbfa;
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* Section Head */
+.section-head {
+  max-width: 600px;
+  margin-bottom: 70px;
+}
+
+.section-head span {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0f766e;
+}
+
+.section-head h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 18px;
+  color: #0f172a;
+}
+
+/* Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 36px;
+  align-items: stretch; /* ⭐ المهم */
+}
+
+/* Card */
+.policy-card {
+  background: #ffffff;
+  padding: 42px 38px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* ⭐ يظبط الطول */
+  box-shadow: 0 25px 50px rgba(15, 23, 42, 0.06);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover */
+.policy-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 40px 80px rgba(15, 23, 42, 0.12);
+}
+
+/* Card Content */
+.policy-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+.policy-card p {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* Highlight Card */
+.policy-card.highlight {
+  background: linear-gradient(135deg, #0f766e, #115e59);
+}
+
+.policy-card.highlight h3,
+.policy-card.highlight p {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-head h2 {
+    font-size: 32px;
+  }
+}
+/* =========================
+   Consulting Section
+========================= */
+.consulting-section {
+  background: #ffffff;
+  padding: 140px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* Section Head */
+.section-head {
+  max-width: 650px;
+  margin-bottom: 80px;
+}
+
+.section-head span {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0f766e;
+}
+
+.section-head h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 18px 0;
+  color: #0f172a;
+}
+
+.section-head p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 34px;
+  align-items: stretch;
+}
+
+/* Card */
+.consulting-card {
+  background: #f8faf9;
+  padding: 42px 36px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* Hover */
+.consulting-card:hover {
+  transform: translateY(-10px);
+  background: #ffffff;
+  box-shadow: 0 40px 80px rgba(15, 23, 42, 0.12);
+}
+
+/* Card Content */
+.consulting-card h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.consulting-card p {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* Highlight Card */
+.consulting-card.highlight {
+  background: linear-gradient(135deg, #0f766e, #115e59);
+}
+
+.consulting-card.highlight h3,
+.consulting-card.highlight p {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-head h2 {
+    font-size: 34px;
+  }
+}
+/* =========================
+   Talent Section
+========================= */
+.talent-section {
+  background: #f8fbfa;
+  padding: 140px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+/* Section Head */
+.section-head {
+  max-width: 650px;
+  margin-bottom: 90px;
+}
+
+.section-head span {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0f766e;
+}
+
+.section-head h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 18px 0;
+  color: #0f172a;
+}
+
+.section-head p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #475569;
+}
+
+/* Layout */
+.talent-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 70px;
+  align-items: start;
+  margin-bottom: 120px;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* Card */
+.talent-card {
+  background: #ffffff;
+  padding: 38px 34px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
+  transition: all 0.4s ease;
+}
+
+.talent-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 75px rgba(15, 23, 42, 0.12);
+}
+
+.talent-card h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.talent-card p {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: #334155;
+}
+
+/* Highlight */
+.talent-card.highlight {
+  background: linear-gradient(135deg, #0f766e, #115e59);
+}
+
+.talent-card.highlight h3,
+.talent-card.highlight p {
+  color: #ffffff;
+}
+
+/* Image */
+.talent-image {
+  position: relative;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 118, 110, 0.15),
+    rgba(15, 118, 110, 0.05)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgba(15, 118, 110, 0.3);
+}
+
+.image-placeholder span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #0f766e;
+  text-transform: uppercase;
+}
+
+/* CTA */
+.talent-cta {
+  text-align: center;
+  padding: 70px 20px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.08);
+}
+
+.talent-cta h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  color: #0f172a;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 38px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0f766e;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #115e59;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .talent-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .image-placeholder {
+    min-height: 320px;
+  }
+}
+/* footer*/
+

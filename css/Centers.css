@@ -1,0 +1,157 @@
+/* ==========================
+   Centers of Excellence - Sidra Theme
+========================== */
+.coe-section {
+  padding: 140px 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,       /* خلفية رسمية وفاتحة */
+    #f5f7fa 100%
+  );
+}
+
+/* Title */
+.coe-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #034d28;    /* أخضر رسمي */
+  margin-bottom: 80px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Grid */
+.coe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.coe-card {
+  background: #e6f2ed;   /* خلفية فاتحة أخضر خفيف */
+  padding: 48px 36px;
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid #cce6d5; /* حدود خفيفة لإحساس رسمي */
+}
+
+/* Top Accent Line */
+.coe-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #034d28;   /* الأخضر الرسمي */
+  border-radius: 12px 12px 0 0;
+}
+
+/* Hover */
+.coe-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15); /* ظل رسمي وهادئ */
+}
+
+/* Heading */
+.coe-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #034d28;   /* الأخضر الرسمي */
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+/* Text */
+.coe-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1f2933;   /* نص داكن واضح */
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .coe-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .coe-title {
+    font-size: 34px;
+  }
+}
+/* ==========================
+   SIDRA Impact Section - Sidra Theme
+========================== */
+.sidra-section {
+  padding: 120px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f7fa 100%);
+}
+
+.sidra-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #034d28;
+  margin-bottom: 80px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.sidra-card {
+  background: #e6f2ed;
+  padding: 48px 36px;
+  border-radius: 12px;
+  position: relative;
+  border: 1px solid #cce6d5;
+  transition: all 0.3s ease;
+}
+
+.sidra-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #034d28;
+  border-radius: 12px 12px 0 0;
+}
+
+.sidra-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.sidra-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #034d28;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.sidra-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1f2933;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .sidra-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .sidra-title {
+    font-size: 34px;
+  }
+}

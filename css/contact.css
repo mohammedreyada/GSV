@@ -1,0 +1,101 @@
+/* ==========================
+   Engage with SIDRA - Sidra Theme
+========================== */
+.engage-section {
+  padding: 120px 0;
+  background: #f5f7fa;
+}
+
+.engage-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.engage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.engage-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #034d28;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form Styling */
+#sidra-contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#sidra-contact-form label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #034d28;
+}
+
+#sidra-contact-form input,
+#sidra-contact-form textarea {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #cce6d5;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+#sidra-contact-form textarea {
+  resize: vertical;
+}
+
+#sidra-contact-form button {
+  padding: 14px 20px;
+  background: #034d28;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#sidra-contact-form button:hover {
+  background: #027a1f;
+}
+
+/* Contact Info Styling */
+.engage-contact {
+  background: #e6f2ed;
+  padding: 36px 28px;
+  border-radius: 12px;
+  border: 1px solid #cce6d5;
+}
+
+.engage-contact h3 {
+  font-size: 24px;
+  color: #034d28;
+  margin-bottom: 20px;
+}
+
+.engage-contact p {
+  font-size: 16px;
+  color: #1f2933;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .engage-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+/* ==========================
+   SIDRA Footer - Sidra Theme
+========================== */
