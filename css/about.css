@@ -92,167 +92,106 @@
 /* =======================
    Vision & Mission Section
 ======================= */
+/* Vision Section */
 .vision-section {
-  padding: 100px 0;
-  background: #ffffff;
-  position: relative;
+  padding: 6rem 0;
+  background: #f8fafc;
 }
 
 .section-title {
-  font-size: 3rem;
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 2.8rem);
   font-weight: 700;
-  color: #0f3d2e;
-  margin-bottom: 70px;
-  position: relative;
+  color: #0f172a;
+  margin-bottom: 3rem;
 }
 
 .section-title span {
-  color: #1a7f5a;
+  color: #0f766e;
 }
 
-.section-title::after {
-  content: "";
-  width: 90px;
-  height: 4px;
-  background: #1a7f5a;
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  border-radius: 10px;
-}
-
-/* النص */
 .vision-text .lead {
-  font-size: 1.15rem;
-  font-weight: 500;
-  color: #1f2933;
-  margin-bottom: 35px;
-  line-height: 1.8;
-}
-
-/* ليست */
-.vision-list {
-  list-style: none;
-  padding: 0;
-}
-
-.vision-list li {
-  font-size: 1.05rem;
-  color: #334155;
-  display: flex;
-  align-items: center;
-  margin-bottom: 18px;
-}
-
-.vision-list li span {
-  color: #1a7f5a;
-  font-weight: 700;
-  margin-right: 12px;
   font-size: 1.2rem;
+  color: #0f766e;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
-/* الكروت */
-.vision-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 25px;
+.vision-points p {
+  font-size: 1.05rem;
+  color: #0f172a;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
+/* VM Cards */
 .vm-card {
-  background: linear-gradient(135deg, #f4f9f6, #ffffff);
-  padding: 35px;
-  border-radius: 20px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
 }
 
 .vm-card h3 {
   font-size: 1.4rem;
-  font-weight: 600;
-  color: #0f3d2e;
-  margin-bottom: 15px;
+  margin-bottom: 0.8rem;
+  color: #0f172a;
 }
 
 .vm-card p {
   font-size: 1rem;
-  color: #334155;
-  line-height: 1.8;
+  color: #475569;
+  line-height: 1.6;
 }
 
-.vm-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 65px rgba(0, 0, 0, 0.15);
+/* Sectors Grid */
+.sidra-sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 1.5rem;
+  margin-top: 2rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .section-title::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .vision-cards {
-    margin-top: 40px;
-  }
-}
-/* =======================
-   Strategic Edge Section
-======================= */
-.edge-section {
-  padding: 100px 0;
-  background: linear-gradient(135deg, #ffffff, #f4f9f6);
-}
-
-.edge-intro {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #1a7f5a;
-  margin-bottom: 50px;
-}
-
-.edge-text p {
-  font-size: 1.05rem;
-  color: #334155;
-  line-height: 1.9;
-  margin-bottom: 20px;
-}
-
-.edge-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.edge-list li {
-  font-size: 1.05rem;
-  color: #1f2933;
-  padding: 15px 20px;
-  margin-bottom: 15px;
+.sector-item {
   background: #ffffff;
-  border-left: 5px solid #1a7f5a;
-  border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #0f172a;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: calc(var(--i) * 0.12s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.edge-list li:hover {
-  transform: translateX(8px);
+.sector-item:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .edge-intro {
-    text-align: center;
-  }
-
-  .edge-list {
-    margin-top: 40px;
+  .sidra-sectors-grid {
+    grid-template-columns: 1fr;
   }
 }
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
 /* =======================
    Values Section
 ======================= */
@@ -315,5 +254,156 @@
 
   .value-number {
     font-size: 2.5rem;
+  }
+}
+/* ===============================
+   SIDRA SECTORS SECTION
+================================ */
+.sidra-sectors {
+  padding: 6rem 0;
+  background: #f8fafc;
+}
+
+.sidra-sectors-intro {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.sidra-sectors-intro h2 {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.sidra-sectors-intro p {
+  font-size: 1.1rem;
+  color: #0f766e;
+  line-height: 1.6;
+}
+
+/* Sectors Grid */
+.sidra-sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 2rem;
+}
+
+/* Individual Sector Item */
+.sector-item {
+  background: #ffffff;
+  padding: 1.8rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #0f172a;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: calc(var(--i) * 0.12s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sector-item:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .sidra-sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sidra-sectors-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reuse animation keyframes */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Edge Section */
+.edge-section {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.section-title span {
+  color: #0f766e;
+}
+
+.edge-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0f766e;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+/* Edge Cards Column */
+.edge-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Individual Edge Card */
+.edge-card {
+  background: #f0fdfa;
+  padding: 1.5rem 1.8rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #0f172a;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: calc(var(--i) * 0.12s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edge-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .edge-cards {
+    gap: 1rem;
+  }
+}
+
+/* Fade Up Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
