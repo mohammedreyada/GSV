@@ -708,6 +708,17 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.vision-link {
+  color: #1e7f43; /* الأخضر */
+  text-decoration: underline;
+  font-weight: inherit;
+}
+
+.vision-link:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
 
 /* Animation Keyframes */
 @keyframes fadeUp {
@@ -771,7 +782,7 @@ body {
 
 /* Custom Check Icon */
 .bullet-points li::before {
-  content: "✓";
+
   position: absolute;
   left: 18px;
   top: 50%;
