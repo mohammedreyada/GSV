@@ -93,105 +93,93 @@
    Vision & Mission Section
 ======================= */
 /* Vision Section */
+
+ /* Section */
 .vision-section {
-  padding: 6rem 0;
-  background: #f8fafc;
+  padding: 120px 0;
+  background: #f9fafb;
+  font-family: "Inter", sans-serif;
 }
 
-.section-title {
-  text-align: center;
-  font-size: clamp(2rem, 3vw, 2.8rem);
+/* Header */
+.vision-header {
+  max-width: 720px;
+  margin-bottom: 70px;
+}
+
+.vision-header h1 {
+  font-size: 3.1rem;
   font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 3rem;
+  margin-bottom: 18px;
 }
 
-.section-title span {
-  color: #0f766e;
+.vision-header span {
+  color: #0a5c3d;
 }
 
-.vision-text .lead {
-  font-size: 1.2rem;
-  color: #0f766e;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.vision-points p {
-  font-size: 1.05rem;
-  color: #0f172a;
+.vision-header p {
+  font-size: 1.15rem;
+  color: #555;
   line-height: 1.7;
-  margin-bottom: 1rem;
 }
 
-/* VM Cards */
-.vm-card {
+/* Boxes */
+.vision-box {
+  height: 100%;
   background: #ffffff;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-  margin-bottom: 2rem;
+  padding: 55px;
+  border-radius: 24px;
+  box-shadow: 0 30px 65px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.vm-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-  color: #0f172a;
+/* Titles */
+.vision-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #0a5c3d;
 }
 
-.vm-card p {
-  font-size: 1rem;
-  color: #475569;
-  line-height: 1.6;
+/* Text */
+.vision-lead {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: 30px;
 }
 
-/* Sectors Grid */
-.sidra-sectors-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem 1.5rem;
-  margin-top: 2rem;
+/* Points */
+.vision-points p {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 14px;
+  color: #444;
+  font-size: 1.02rem;
 }
 
-.sector-item {
-  background: #ffffff;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  text-align: center;
-  font-weight: 500;
-  color: #0f172a;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s ease forwards;
-  animation-delay: calc(var(--i) * 0.12s);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.vision-points p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 8px;
+  height: 2px;
+  background-color: #0a5c3d;
+  opacity: 0.6;
+}
+.vision-box:hover {
+  background: linear-gradient(
+    145deg,
+    #ffffff 0%,
+    #f4f8f6 40%,
+    #eef4f1 100%
+  );
+  transform: translateY(-6px);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.10);
 }
 
-.sector-item:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .sidra-sectors-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Fade Up Animation */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
- 
 /* =======================
    Values Section
 ======================= */

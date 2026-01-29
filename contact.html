@@ -50,6 +50,7 @@
 <section class="engage-section">
   <div class="container engage-container">
     <div class="engage-grid">
+      
       <!-- Inquiry Form -->
       <div class="engage-form">
         <h2 class="engage-title">Engage with SIDRA</h2>
@@ -68,6 +69,7 @@
 
           <button type="submit">Send Message</button>
         </form>
+        <p id="form-alert" class="form-alert"></p>
       </div>
 
       <!-- Contact Information -->
@@ -78,9 +80,11 @@
         <p><strong>Phone:</strong> +966 12 345 6789</p>
         <p><strong>Office Hours:</strong> Sun - Thu, 9:00 AM - 5:00 PM</p>
       </div>
+
     </div>
   </div>
 </section>
+
 <!-- ==========================
      Footer - Sidra Style
 ========================== -->
@@ -91,7 +95,7 @@
 
       <!-- Brand -->
       <div class="footer-brand">
-        <h2>SIDRA</h2>
+        <h2>SIDRA PARTNERS</h2>
         <p>
           Saudi-led advisory firm delivering strategic impact aligned with
           Vision 2030 through sustainability, digital transformation,
@@ -105,43 +109,42 @@
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About SIDRA</a></li>
-          <li><a href="./Explore our Approach.html">Centers of Excellence</a></li>
+          <li><a href="./Centers.html">Centers of Excellence</a></li>
           <li><a href="./Services.html">Services</a></li>
+          <li><a href="./Explore our Approach.html">Explore our Approach</a></li>
           <li><a href="./contact.html">Engage with SIDRA</a></li>
-         <li><a href="./Centers.html">Explore our Approach</a></li>
-
         </ul>
       </div>
 
       <!-- Contact -->
       <div class="footer-contact">
         <h4>Contact</h4>
-        <p>SIDRA Office<br>Jeddah, Saudi Arabia</p>
+        <p>SIDRA Partners Office</p>
         <p>Email: contact@sidra.com</p>
-        <p>Phone: +966 12 345 6789</p>
 
         <div class="footer-social">
           <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-youtube"></i></a>
+
         </div>
       </div>
 
-      <!-- Newsletter -->
+      <!-- Stay Connected -->
       <div class="footer-newsletter">
         <h4>Stay Connected</h4>
         <p>Insights, updates, and perspectives from SIDRA.</p>
-        <form>
-          <input type="email" placeholder="Your email address" required>
-          <button type="submit">Subscribe</button>
-        </form>
+        <a href="./contact.html" class="footer-cta">
+          Engage with SIDRA →
+        </a>
       </div>
 
     </div>
 
     <!-- Bottom -->
     <div class="footer-bottom">
-      <p>© 2026 SIDRA. All rights reserved.</p>
+      <p>© 2026 SIDRA Partners. All rights reserved.</p>
       <div class="footer-legal">
         <a href="#">Privacy Policy</a>
         <span>|</span>
@@ -153,7 +156,9 @@
 </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" defer></script>
+<script src="./js/main.js" defer></script>
+
 
 </body>
 </html>

@@ -582,7 +582,9 @@
 }
 
 .thought-leadership .container {
-  max-width: 1200px;
+  max-width: 100%; /* نسمح للـ grid بالتمدد */
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 /* Title */
@@ -604,15 +606,18 @@
   color: #5f6b7a;
 }
 
-/* ===== Grid ===== */
+/* ===== Flexbox Grid for 5 Cards ===== */
 .points-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 cards side by side */
+  display: flex;
   gap: 24px;
+  overflow-x: auto; /* يسمح بالتمرير الأفقي على الشاشات الضيقة */
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
 }
 
-/* Card */
 .point-card {
+  flex: 0 0 calc(20% - 19.2px); /* 5 كاردات في صف واحد مع الـ gap */
+  min-width: 220px; /* عرض أدنى للكارد */
   background: #ffffff;
   padding: 30px 24px;
   border-radius: 18px;
@@ -639,6 +644,15 @@
   line-height: 1.7;
   color: #5f6b7a;
   margin: 0;
+}
+
+/* إخفاء شريط التمرير على المتصفحات */
+.points-grid::-webkit-scrollbar {
+  display: none;
+}
+.points-grid {
+  -ms-overflow-style: none;  /* IE و Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* ===== Vision Link ===== */
@@ -672,27 +686,7 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 1200px) {
-  .points-grid {
-    grid-template-columns: repeat(2, 1fr); /* Tablet */
-  }
-}
-
-@media (max-width: 576px) {
-  .thought-leadership {
-    padding: 70px 0;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .points-grid {
-    grid-template-columns: 1fr; /* Mobile */
-  }
-}
-/* ===== Global CTA (No Background) ===== */
+/* ===== Global CTA ===== */
 .global-cta {
   margin: 80px 0;
   text-align: center;
@@ -733,8 +727,16 @@
   transform: translateX(4px);
 }
 
-/* ===== Mobile ===== */
+/* ===== Mobile Button ===== */
 @media (max-width: 576px) {
+  .thought-leadership {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
   .btn-sidra {
     width: 100%;
     justify-content: center;

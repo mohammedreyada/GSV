@@ -1139,3 +1139,27 @@ body {
     padding: 30px 22px;
   }
 }
+.footer-cta {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 18px;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  color: #0a7a4a;              /* أخضر SIDRA */
+  border: 1px solid #0a7a4a;
+  border-radius: 6px;
+
+  text-decoration: none;
+  background: transparent;
+
+  transition: all 0.3s ease;
+}
+
+.footer-cta:hover {
+  background-color: #0a7a4a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
