@@ -46,3 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+document.querySelectorAll(".strength-item").forEach(item => {
+    const btn = item.querySelector(".toggle-btn");
+
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".strength-item").forEach(i => {
+        if (i !== item) i.classList.remove("active");
+      });
+
+      item.classList.toggle("active");
+    });
+  });

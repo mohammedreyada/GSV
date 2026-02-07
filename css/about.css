@@ -395,3 +395,58 @@
     transform: translateY(0);
   }
 }
+.sidra-strengths {
+  padding: 90px 0;
+}
+
+.sidra-strengths .container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.strength-item {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.strength-item h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.toggle-btn {
+  background: transparent;
+  border: 1px solid #1b6f4a;
+  color: #1b6f4a;
+  padding: 10px 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #1b6f4a;
+  color: #fff;
+}
+
+.strength-content {
+  max-width: 720px;
+  margin: 24px auto 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.45s ease;
+}
+
+.strength-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Active */
+.strength-item.active .strength-content {
+  opacity: 1;
+  max-height: 400px;
+}
